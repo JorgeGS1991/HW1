@@ -4,7 +4,7 @@
 from datetime import datetime
 
 # ask user to type username
-username = input ("Whats your name ")
+username = input("Whats your name ")
 
 # get the lines stap fro today
 today = datetime.now()
@@ -16,17 +16,14 @@ month_name = today.strftime("%B")
 day_number = today.day
 
 # if the day is equals to 1, 21 or 31 the suffix will be st
-if day_number == 1 or 21 or 31:
+if day_number == 1 or day_number == 21 or day_number == 31:
     suffix = "st"
-
 # if the day is equals to 2 or 22 the suffix will be nd
-elif day_number == 2 or 22:
+elif day_number == 2 or day_number == 22:
     suffix = "nd"
-
 # if the day is equals to 3 or 23 the suffix will be rd
-elif day_number == 3 or 23:
+elif day_number == 3 or day_number == 23:
     suffix = "rd"
-
 # else the suffix will be th 
 else:
     suffix = "th"
