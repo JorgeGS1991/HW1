@@ -39,23 +39,22 @@ else:
     day_type = "odd"
 
 # Print out the Statement including month_name, day_number, year_number, today.month*day)number and day_type.
-print("Hello.",username, "Todays Date is", month_name, str(day_number), suffix, "of", str(year_number),
+print("Hello.", username, "Todays Date is", month_name, str(day_number), suffix, "of", str(year_number),
       "The product of the month and day is", today.month * day_number, "which is an", day_type, "number.")
 
 
 #Loop
 #Define n-1
 n = 1
-#While  n< day_number
+#While  n <= day_number
 while n <= day_number:
-    print(n)
 
-# n= n-1
+# n = n + 1
     n = n + 1
 #End Loop
 
 #Print days
-print ("days")
+print ("If you counted the days this month so far you would have", n -1, suffix,"days.")
 
 
 
